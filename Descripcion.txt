@@ -1,0 +1,9 @@
+Con estos scripts se pueden los dispositivos de zabbix en formato json 
+para ser importandos de forma simultanea, dependiendo si son por snmp o por
+icmp.
+
+Para esto revisar el archivo Host.xlsx los cuales tiene la estructura correcta
+para que funcione el script.
+
+El resultado que se debe de subir a zabbix son los que dicen data_icmp.json o
+data_snmp.json dependiendo del caso.

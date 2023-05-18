@@ -1,0 +1,5 @@
+Script para realizar ping a multiple dispositivos.
+
+Necesario:
+	Archivo ips.txt con las ips a revisar
+	Archivo Result_ips.txt para obtener el resultado del ping

@@ -1,0 +1,28 @@
+{
+    "zabbix_export": {
+        "version": "6.0",
+        "hosts": [
+            {
+                "host": "ap",
+                "name": "ap|",
+                "templates": [
+                    {
+                        "name": "Template_Summa_ICMP"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "devices/ap"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "10.10.10.10",
+                        "interface_ref": "if1"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            }
+        ]
+    }
+}

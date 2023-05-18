@@ -1,0 +1,39 @@
+{
+    "zabbix_export": {
+        "version": "6.0",
+        "hosts": [
+            {
+                "host": "sw",
+                "name": "sw",
+                "templates": [
+                    {
+                        "name": "Template_Summa_Snmp_Cisco"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "devices/aps"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "type": "SNMP",
+                        "ip": "10.10.10.10",
+                        "port": "161",
+                        "details": {
+                            "version": "SNMPV3",
+                            "securityname": "{$SNMP_SECURITYNAME}",
+                            "securitylevel": "AUTHPRIV",
+                            "authprotocol": "SHA1",
+                            "authpassphrase": "{$SNMP_AUTHENTICATION}",
+                            "privprotocol": "AES128",
+                            "privpassphrase": "{$SNMP_PRIVATE}"
+                        },
+                        "interface_ref": "if1"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            }
+        ]
+    }
+}
